@@ -39,27 +39,27 @@ class AddCourse extends Component {
             .catch((error) => {
                 console.error(error);
         });
-        var teachData={
-            "year" :e.target.Year.value,
-            "semester":e.target.Semester.value,
-            "course_id" :e.target.Course_id.value,
-            "instructor_id" : e.target.Instructor_id.value
-        }
-        await fetch('http://13.229.251.3:3001/api/teach', {
-            method: 'post',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(opts)
-        }).then(function (response) {
-            return response.json();
-        }).then(function (data) {
-            console.log('Created Gist:', data);
-        })
-            .catch((error) => {
-                console.error(error);
-        });
+        // var teachData={
+        //     "year" :e.target.Year.value,
+        //     "semester":e.target.Semester.value,
+        //     "course_id" :e.target.Course_id.value,
+        //     "instructor_id" : e.target.Instructor_id.value
+        // }
+        // await fetch('http://13.229.251.3:3001/api/teach', {
+        //     method: 'post',
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(opts)
+        // }).then(function (response) {
+        //     return response.json();
+        // }).then(function (data) {
+        //     console.log('Created Gist:', data);
+        // })
+        //     .catch((error) => {
+        //         console.error(error);
+        // });
 
 
         window.location="/Course"
@@ -97,7 +97,7 @@ class AddCourse extends Component {
                             <option>5</option> */} 
                             </select>
                         </div>
-                    </div>
+                    {/* </div>
                     <div className="row">
                             <div className="form-group col-sm-2 offset-sm-2">
                                 <label for="Instructor_id">Instructor id</label>
@@ -111,7 +111,7 @@ class AddCourse extends Component {
                             <label for="Semester">Semester</label>
                             <input type="text" className="form-control" id="Semester" placeholder="Semester"></input>
                         </div>
-                        </div >
+                        </div > */}
                     <input className="btn btn-primary" type="submit" value="Add cousre"></input>
                 </form>
                 
