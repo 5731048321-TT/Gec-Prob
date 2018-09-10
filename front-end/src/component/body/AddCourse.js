@@ -110,8 +110,9 @@ class AddCourse extends Component {
                         <div className="form-group col-sm-2">
                             <label for="Semester">Semester</label>
                             <input type="text" className="form-control" id="Semester" placeholder="Semester"></input>
-                        </div>
-                        </div > */}
+                    // </div>*/}
+                        </div >
+                     
                     <input className="btn btn-primary" type="submit" value="Add cousre"></input>
                 </form>
                 
